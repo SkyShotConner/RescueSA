@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Services | RescueSA</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span class="logo-icon">+</span>
+        Rescue<span>SA</span>
+    </a>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="provinces.html">Provinces</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <span class="eyebrow">DIRECTORY</span>
+
+    <h1>Emergency Services</h1>
+
+    <p>
+        Browse emergency services and organizations
+        across South Africa.
+    </p>
+
+</section>
+
+
+<section class="directory-section">
+
+
+    <div class="filter-bar">
+
+        <input
+            type="text"
+            id="directorySearch"
+            placeholder="Search services..."
+            onkeyup="filterDirectory()"
+        >
+
+
+        <select id="serviceFilter" onchange="filterDirectory()">
+
+            <option value="all">All services</option>
+            <option value="fire">Fire & Rescue</option>
+            <option value="ems">Emergency Medical</option>
+            <option value="air">Air Ambulance</option>
+            <option value="rescue">Search & Rescue</option>
+            <option value="hospital">Hospitals</option>
+            <option value="police">Police</option>
+
+        </select>
+
+    </div>
+
+
+    <div id="serviceResults" class="service-list">
+
+
+        <div class="service-result" data-type="fire">
+
+            <div class="result-icon">🚒</div>
+
+            <div>
+
+                <span class="result-type">
+                    FIRE & RESCUE
+                </span>
+
+                <h3>Emergency Services Directory</h3>
+
+                <p>
+                    Fire and rescue organizations across South Africa.
+                </p>
+
+                <span class="result-location">
+                    🇿🇦 South Africa
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-result" data-type="ems">
+
+            <div class="result-icon">🚑</div>
+
+            <div>
+
+                <span class="result-type">
+                    EMS
+                </span>
+
+                <h3>Emergency Medical Services</h3>
+
+                <p>
+                    Ambulance and emergency medical services.
+                </p>
+
+                <span class="result-location">
+                    🇿🇦 South Africa
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-result" data-type="air">
+
+            <div class="result-icon">🚁</div>
+
+            <div>
+
+                <span class="result-type">
+                    AIR AMBULANCE
+                </span>
+
+                <h3>Air Ambulance Services</h3>
+
+                <p>
+                    Aviation-based medical and rescue services.
+                </p>
+
+                <span class="result-location">
+                    🇿🇦 South Africa
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-result" data-type="rescue">
+
+            <div class="result-icon">🛟</div>
+
+            <div>
+
+                <span class="result-type">
+                    SEARCH & RESCUE
+                </span>
+
+                <h3>Search & Rescue Organizations</h3>
+
+                <p>
+                    Specialist rescue organizations and teams.
+                </p>
+
+                <span class="result-location">
+                    🇿🇦 South Africa
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-result" data-type="hospital">
+
+            <div class="result-icon">🏥</div>
+
+            <div>
+
+                <span class="result-type">
+                    HOSPITAL
+                </span>
+
+                <h3>Hospitals & Emergency Departments</h3>
+
+                <p>
+                    Hospitals providing emergency medical care.
+                </p>
+
+                <span class="result-location">
+                    🇿🇦 South Africa
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-result" data-type="police">
+
+            <div class="result-icon">👮</div>
+
+            <div>
+
+                <span class="result-type">
+                    POLICE
+                </span>
+
+                <h3>Police & Law Enforcement</h3>
+
+                <p>
+                    Police stations and law enforcement services.
+                </p>
+
+                <span class="result-location">
+                    🇿🇦 South Africa
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">+</span>
+                Rescue<span>SA</span>
+            </a>
+
+            <p>
+                Connecting South Africa with emergency services.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 RescueSA.
+    </div>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
